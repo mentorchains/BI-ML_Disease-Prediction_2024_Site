@@ -1,5 +1,5 @@
-title: Project Title
-description: Project description very short
+title: Gene-Disease Association Predictor App
+description: A Streamlit app that enables users to build machine learning models to predict gene-disease association.
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://mentorchains.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
