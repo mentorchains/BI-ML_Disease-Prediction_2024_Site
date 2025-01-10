@@ -1,5 +1,5 @@
-title: Project Title
-description: Project description very short
+title: GDAP
+description: A pipeline that enables users to build machine learning models to predict gene-disease association.
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://mentorchains.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
@@ -85,6 +85,7 @@ ga_tracking_anonymize_ip: true # Use GDPR compliant Google Analytics settings (t
 
 plugins:
   - jekyll-seo-tag
+  - jekyll-target-blank
 
 kramdown:
   syntax_highlighter_opts:
