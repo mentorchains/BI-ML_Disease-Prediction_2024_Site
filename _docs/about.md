@@ -9,7 +9,7 @@ nav_order: 5
 * Lead name
 
 # Team Members:
-* Person 1
+* Ahmed Salim
 * Person 2
 * ...etc
 
@@ -20,4 +20,4 @@ Some information.
 Some information.
 
 # Contact Us
-If you have questions, comments or require any technical support about the (Project Title here), please email (Lead Developer or Project Lead), (Lead Email).
+If you have questions, comments or require any technical support about the GDAP, please email (Lead Developer or Project Lead), (Lead Email).
