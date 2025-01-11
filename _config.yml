@@ -1,6 +1,6 @@
-title: Project Title
-description: Project description very short
-baseurl: "/" # the subpath of your site, e.g. /blog
+title: GDAP
+description: A pipeline that enables users to build machine learning models to predict gene-disease association.
+baseurl: "/BI-ML_Disease-Prediction_2024_Site" # the subpath of your site, e.g. /blog
 url: "https://mentorchains.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 path_logo_links: "/assets/images/bioinformatics.svg"
@@ -71,7 +71,7 @@ last_edit_time_format: "%b %e %Y at %I:%M %p" # uses ruby's time format: https:/
 # Footer "Edit this page on GitHub" link text
 gh_edit_link: false # show or hide edit this page link
 gh_edit_link_text: "Edit this page on GitHub"
-gh_edit_repository: "https://github.com/mentorchains/project-site-template-SA" # the github URL for your repo
+gh_edit_repository: "https://github.com/mentorchains/BI-ML_Disease-Prediction_2024_Site" # the github URL for your repo
 gh_edit_branch: "master" # the branch that your docs is served from
 # gh_edit_source: docs # the source that your files originate from
 gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into the editor immediately
@@ -85,6 +85,7 @@ ga_tracking_anonymize_ip: true # Use GDPR compliant Google Analytics settings (t
 
 plugins:
   - jekyll-seo-tag
+  - jekyll-target-blank
 
 kramdown:
   syntax_highlighter_opts:
