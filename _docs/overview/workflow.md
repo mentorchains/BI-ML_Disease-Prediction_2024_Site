@@ -9,7 +9,7 @@ nav_order: 2
 ## GDAP session workflow
 
 <figure style="text-align: center;">
-  <img src="/assets/gdap/gdap-workflow.png" alt="gdap-workflow" style="width: 80%;">
+  <img src="{{ site.baseurl }}/assets/gdap/gdap-workflow.png" alt="gdap-workflow" style="width: 80%;">
   <figcaption>GDAP Workflow</figcaption>
 </figure>
 
@@ -32,7 +32,7 @@ The first step in the GDAP workflow involves gathering the necessary data from t
 The [Open Targets platform][opentargets-platform] provides a comprehensive resource for identifying therapeutic drug targets, offering data on [disease-gene associations][opentargets-disease]. GDAP utilizes two primary methods for accessing this data: the GraphQL API and Google BigQuery. Both methods offer different approaches for querying disease-target association data which are identified by [Experimental Factor Ontology (EFO)][efo] terms.
 
 <figure style="text-align: center;">
-  <img src="/assets/gdap/overview/ot-sample-data-indirect-scores.png" alt="sample of ppi data" style="width: 50%;">
+  <img src="{{ site.baseurl }}/assets/gdap/overview/ot-sample-data-indirect-scores.png" alt="sample of ppi data" style="width: 50%;">
   <figcaption>Sample of disease-target data</figcaption>
 </figure>
 
@@ -115,7 +115,7 @@ The [Open Targets platform][opentargets-platform] provides a comprehensive resou
 The STRING database provides a comprehensive [network][string-ppi-network] of protein-protein interactions (PPIs) for Homo sapiens. Each interaction is assigned a [combined score][string-combined-score], a probabilistic measure derived from multiple evidence sources, such as experimental data and text mining. This score quantifies the likelihood of interaction, forming the backbone for integrating disease-gene data with protein interactions in the GDAP workflow.
 
 <figure style="text-align: center;">
-  <img src="/assets/gdap/overview/ppi-sample-data.png" alt="sample of ppi data" style="width: 50%;">
+  <img src="{{ site.baseurl }}/assets/gdap/overview/ppi-sample-data.png" alt="sample of ppi data" style="width: 50%;">
   <figcaption>Sample of PPI Data</figcaption>
 </figure>
 
@@ -137,12 +137,12 @@ This stage integrates the disease-gene associations and PPI data into a bipartit
 <div style="display: flex; justify-content: space-between; align-items: center;">
 
   <figure style="text-align: center; width: 48%;">
-    <img src="/assets/gdap/overview/bigraph-negative-edge.png" alt="Negative PPI edge" style="width: 100%;">
+    <img src="{{ site.baseurl }}/assets/gdap/overview/bigraph-negative-edge.png" alt="Negative PPI edge" style="width: 100%;">
     <figcaption>Negative PPI edge</figcaption>
   </figure>
 
   <figure style="text-align: center; width: 48%;">
-    <img src="/assets/gdap/overview/bigraph-positive-edge.png" alt="Positive disease-gene edge" style="width: 100%;">
+    <img src="{{ site.baseurl }}/assets/gdap/overview/bigraph-positive-edge.png" alt="Positive disease-gene edge" style="width: 100%;">
     <figcaption>Positive disease-gene edge</figcaption>
   </figure>
 
@@ -155,7 +155,7 @@ Node embeddings are generated using various [nodevectors][nodevectors] models to
 These embeddings capture the structural and relational properties of nodes within the graph, ensuring that nodes representing similar biological entities or interactions are closely aligned in the vector space, which facilitates accurate predictions.
 
 <figure style="text-align: center;">
-  <img src="/assets/gdap/overview/node-embeddings.png" alt="sample of ppi data" style="width: 100%;">
+  <img src="{{ site.baseurl }}/assets/gdap/overview/node-embeddings.png" alt="sample of ppi data" style="width: 100%;">
   <figcaption>Node embeddings generation</figcaption>
 </figure>
 
