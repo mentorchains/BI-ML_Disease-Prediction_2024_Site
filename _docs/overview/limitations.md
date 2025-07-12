@@ -2,16 +2,70 @@
 layout: default
 title: Limitations
 parent: Overview
-nav_order: 5
-
+nav_order: 3
 ---
 
-## Current technical limitation
+# Limitations
 
-(Example of limitations. Please edit)
+While GDAP provides valuable predictions, it has several important limitations that users should be aware of.
 
-* The current (Project Title) version is deployed in an online machine where the memory allocation is only 2GB. Therefore, we recommend that the input file size should be less than 100 MB. This input size usually has less than 10000 samples.
-* The user may see the error, which says, ‘An error has occurred. Check your logs or contact the app author for clarification’. We have investigated these issues and found that the issues are not related to our implementation. Two reasons for these issues are:
-* Long time without interaction. Usually, the sMAP online tool would return an error if the user does not interact with sMAP within 3-5 minutes
-* System slow computation and response. That is, the user interacts and expects some visualization (i.e. embedding plot) while the system has not yet computed and processed.
-To completely solve these issues, we may upgrade the sMAP server. This requires a monthly payment to shinyapps.io. Due to the financial processing time requirement, we have not yet completed the paperwork for the upgrade. Meanwhile, the user may try deploying sMAP code at shinyapps.io inside an in-house computer.
+## Data Limitations
+
+### Coverage
+- **Disease-specific**: Predictions are limited to diseases with sufficient data in Open Targets Platform
+- **Gene coverage**: Only includes genes with protein interaction data in STRING database
+- **Species-specific**: Currently limited to Homo sapiens
+
+### Data Quality
+- **Experimental bias**: Training data reflects historical research priorities
+- **Publication bias**: Well-studied diseases have more data
+- **Annotation quality**: Depends on accuracy of source databases
+
+## Model Limitations
+
+### Prediction Accuracy
+- **False positives**: Some predicted associations may not be biologically relevant
+- **False negatives**: May miss associations due to data limitations
+- **Confidence scores**: Should not be interpreted as absolute probabilities
+
+### Generalization
+- **Training bias**: Models trained on known associations may not generalize to novel relationships
+- **Disease specificity**: Models trained on one disease may not apply to others
+- **Temporal changes**: New discoveries may not be reflected in training data
+
+## Technical Limitations
+
+### Computational Resources
+- **Memory requirements**: Large datasets require significant RAM
+- **Processing time**: Complex embeddings can take hours to generate
+- **Storage**: Results can be several GB for large analyses
+
+### Scalability
+- **Graph size**: Very large networks may exceed memory limits
+- **Embedding quality**: Performance may degrade with extremely large graphs
+- **Model complexity**: Some algorithms don't scale well to massive datasets
+
+## Biological Limitations
+
+### Context Dependence
+- **Tissue specificity**: Predictions don't account for tissue-specific expression
+- **Temporal dynamics**: Don't capture developmental or disease progression changes
+- **Environmental factors**: Don't consider external influences on gene expression
+
+### Validation Requirements
+- **Experimental validation**: All predictions require laboratory confirmation
+- **Biological context**: Predictions need interpretation in disease context
+- **Clinical relevance**: Not all associations are clinically meaningful
+
+## Best Practices
+
+### Mitigating Limitations
+1. **Use multiple models**: Compare predictions across different algorithms
+2. **Validate predictions**: Always confirm with experimental data
+3. **Consider context**: Interpret results in biological and clinical context
+4. **Update regularly**: Retrain models with new data
+
+### Quality Control
+- **Check data sources**: Verify disease and gene data quality
+- **Monitor performance**: Track model accuracy over time
+- **Document assumptions**: Clearly state limitations in reports
